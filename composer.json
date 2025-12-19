@@ -24,10 +24,10 @@
     ],
     "require": {
         "heyday/silverstripe-elastica": "^2.2|^4.1",
-        "nglasl/silverstripe-extensible-search": "^4.1",
-        "nyeholt/silverstripe-extensible-elastic": "^2.10.0|^3.0",
-        "nswdpc/silverstripe-elemental-extensible-search": "^0.1",
-        "symbiote/silverstripe-multivaluefield": "^5.1.0"
+        "nglasl/silverstripe-extensible-search": "dev-feat-silverstripe-5",
+        "nyeholt/silverstripe-extensible-elastic": "dev-feat-silverstripe-5",
+        "nswdpc/silverstripe-elemental-extensible-search": "dev-feat-silverstripe-5",
+        "symbiote/silverstripe-multivaluefield": "^6"
     },
     "config": {
         "process-timeout": 600
