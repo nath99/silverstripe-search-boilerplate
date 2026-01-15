@@ -23,7 +23,8 @@ class ExtensibleSearchPageControllerExtension extends Extension
         $page = $this->owner->data();
         if($displayedSortByFields = $page->DisplayedSortFields) {
             $selectableSortFields = $page->getSelectableFields();
-            $displayedFields = $displayedSortByFields->getValue();
+            $displayedFields = $displayedSortByFields->getValue() ?? [];
+
             foreach($displayedFields as $fieldName) {
                 $fieldLabel = isset($selectableSortFields[ $fieldName ]) ? FormField::name_to_label($selectableSortFields[ $fieldName ]) : '';
                 if(!$fieldLabel) {
